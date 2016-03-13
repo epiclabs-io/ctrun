@@ -9,13 +9,13 @@ Copy the script to `/usr/bin/local/` and edit it to change the network name, DNS
 ## Usage
 
 ```
-ctrun hostname [-v volume_path1[:options]] [docker run switches/options] image_name [command]
+ctrun hostname [-av volume_path1[:options]] [docker run switches/options] image_name [command]
 ```
 
 Example:
 
 ```bash
-$ ctrun "www.example.com" -v /var/www apache2
+$ ctrun "www.example.com" -av /var/www apache2
 ```
 
 
