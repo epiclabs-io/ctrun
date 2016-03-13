@@ -34,7 +34,7 @@ function ctrun() {
 
 	if [[ "$host" == "" ]]; then
 		echo "Usage: "
-		echo "ctrun hostname [-v volume_path1[:options]] [docker run switches/options] image_name [command]"
+		echo "ctrun hostname [-av volume_path1[:options]] [docker run switches/options] image_name [command]"
 		exit 1
 	fi
 	
@@ -46,7 +46,7 @@ function ctrun() {
 	shift
 
 	while (( "$#" )); do
-		if [ "$1" == "-v" ]; then
+		if [ "$1" == "-av" ]; then
 			VOLPATH="$2"
 			PARMS=""
 			
